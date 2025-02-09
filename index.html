@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Compare</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <h1>Movies Compare</h1>
+    <div class="container">
+        <!-- Box for the first movie -->
+        <div class="movie-box">
+            <input type="text" id="movieTitle1" placeholder="Enter 1st Movie Title" oninput="fetchMovie(1)">
+            <div id="movieDetails1"></div>
+        </div>
+        <!-- Box for the second movie -->
+        <div class="movie-box">
+            <input type="text" id="movieTitle2" placeholder="Enter 2nd Movie Title" oninput="fetchMovie(2)">
+            <div id="movieDetails2"></div> 
+        </div>
+    </div>
+    <!-- Button to compare the two selected movies -->
+    <button id="compareBtn" onclick="compareMovies()">Compare</button>
+    <div id="comparison"></div>
+    <!-- Linking the JavaScript file to add functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
